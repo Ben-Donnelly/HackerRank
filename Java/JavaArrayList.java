@@ -18,7 +18,7 @@ public class JavaArrayList {
         }
 
         int numOfQueries = scan.nextInt();
-        while (numOfQueries > 0) {
+        while (numOfQueries-- > 0) {
             int arrayNumberToQuery = scan.nextInt();
             int positionOfArrayToQuery = scan.nextInt();
 
@@ -30,7 +30,6 @@ public class JavaArrayList {
             catch (IndexOutOfBoundsException e) {
                 System.out.println("ERROR!");
             }
-            numOfQueries--;
         }
     }
 }
